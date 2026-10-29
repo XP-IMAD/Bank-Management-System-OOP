@@ -145,6 +145,7 @@ public:
 	void UpdateRate(float NewRate)
 	{
 		_Rate = NewRate;
+		_Update();
 	}
 
 	float Rate()

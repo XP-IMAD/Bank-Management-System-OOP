@@ -1,7 +1,7 @@
 United States of America#//#USD#//#US Dollar#//#1.000000
 Afghanistan#//#AFN#//#Afghanistan Afghani#//#87.480003
 Albania#//#ALL#//#Albania Lek(e)#//#109.010002
-Algeria#//#DZD#//#Algerian Dinar#//#137.046005
+Algeria#//#DZD#//#Algerian Dinar#//#152.044006
 American Samoa#//#USD#//#US Dollar#//#1.000000
 France#//#EUR#//#Euro#//#0.880000
 Angola#//#AOA#//#Angolan Kwanza#//#504.734009
@@ -58,7 +58,7 @@ Dominica#//#XCD#//#E.C. Dollar#//#2.700000
 Dominican Republic#//#DOP#//#Dominican Peso#//#54.716000
 East Timor#//#USD#//#US Dollar#//#1.000000
 Ecuador#//#USD#//#US Dollar#//#1.000000
-Egypt#//#EGP#//#Egyptian Pound#//#47.650000
+Egypt#//#EGP#//#Egyptian Pound#//#47.650002
 El Salvador#//#USD#//#US Dollar#//#1.000000
 Equatorial Guinea#//#XAF#//#CFA Franc#//#615.401978
 Eritrea#//#ERN#//#Eritrea Nakfa#//#15.000000
@@ -98,7 +98,7 @@ Ireland#//#EUR#//#Euro#//#0.880000
 Italy#//#EUR#//#Euro#//#0.880000
 Jamaica#//#JMD#//#Jamaican Dollar#//#153.470001
 Japan#//#JPY#//#Japanese Yen#//#134.869995
-Jordan#//#JOD#//#Jordanian Dinar#//#0.708000
+Jordan#//#JOD#//#Jordanian Dinar#//#0.788000
 Kazakhstan#//#KZT#//#Kazakhstan Tenge#//#468.950012
 Kenya#//#KES#//#Kenyan Shilling#//#122.739998
 Kiribati#//#AUD#//#Australian Dollar#//#1.500000

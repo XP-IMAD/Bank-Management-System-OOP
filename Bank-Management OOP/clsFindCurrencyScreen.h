@@ -37,7 +37,7 @@ public:
 
 	static void ShowFindCurrencyScreen()
 	{
-		_DrawScreenHeader("\t   Find Currency Screen");
+		_DrawScreenHeader("\t    Find Currency Screen");
 
 		cout << "\nFind By: [1] Code or [2] Country: ";
 
