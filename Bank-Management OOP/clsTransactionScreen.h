@@ -10,7 +10,7 @@
 #include "clsWithdrawScreen.h"
 #include "clsTotalBalancesScreen.h"
 #include "clsTransferLogScreen.h"
-#include "clsTransferLogScreen.h"
+#include "clsTransferScreen.h"
 
 class clsTransactionScreen : protected clsScreen
 {
@@ -54,7 +54,7 @@ private:
 	{
 		//cout << "\nTransfer Screen Will Be Here...\n";
 
-		clsTransferLogScreen::ShowTransferLogScreen();
+		clsTrnasferScreen::ShowTransferScreen();
 	}
 
 	static void _ShowTransferLogScreen()

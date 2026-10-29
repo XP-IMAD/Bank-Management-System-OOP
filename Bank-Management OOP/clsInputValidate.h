@@ -58,7 +58,7 @@ public:
 			cin.clear();
 			cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 
-			cout << message << endl;
+			cout << message;
 			cin >> Number;
 		}
 

@@ -12,7 +12,6 @@
 #include "clsTransactionScreen.h"
 #include "clsManageUsersScreen.h"
 #include "clsLoginScreen.h"
-#include "clsLoginRegisterScreen.h"
 #include "clsCurrencyExchangeMenue.h"
 #include "Global.h"
 using namespace std;
@@ -25,14 +24,14 @@ private:
 	enum enMainMenueOption {
 		eListClients = 1, eAddNewClient = 2, eDeleteClient = 3,
 		eUpdateClient = 4, eFindClient = 5, eShowTransactionMenue = 6,
-		eManageUsers = 7, eLoginRegister = 8, eCurrencyExchange = 9,
-		eExit = 10 
+		eManageUsers = 7, eCurrencyExchange = 8,
+		eExit = 9 
 	};
 
 	static short _ReadMainMenuOption()
 	{
-		cout << setw(38) << left << "" << "Choose What Do You Want To Do [1 TO 10]: ";
-		short Choise = clsInputValidate::ReadShortNumberBetween(1, 10, "Enter Number Between 1 and 10: ");
+		cout << setw(38) << left << "" << "Choose What Do You Want To Do [1 TO 9]: ";
+		short Choise = clsInputValidate::ReadShortNumberBetween(1, 9, "Enter Number Between 1 and 9: ");
 
 		return Choise;
 	}
@@ -102,11 +101,6 @@ private:
 		clsCurrencyExchangeMenue::ShowCurrencyExchangeMeneu();
 	}
 
-	static void _ShowLoginRegisterScreen()
-	{
-		clsLoginRegisterScreen::ShowLoginRegisterScreen();
-	}
-
 	static void _Logout()
 	{
 		CurrentUser.ClearObject();
@@ -158,12 +152,6 @@ private:
 			_GoBackToMainMenue();
 			break;
 
-		case eLoginRegister:
-			system("cls");
-			_ShowLoginRegisterScreen();
-			_GoBackToMainMenue();
-			break;
-
 		case eCurrencyExchange:
 			system("cls");
 			_ShowCurrencyExchangeMeneu();
@@ -197,9 +185,8 @@ public:
 		cout << setw(38) << left << "" << "\t [5] Find Client\n";
 		cout << setw(38) << left << "" << "\t [6] Transactions\n";
 		cout << setw(38) << left << "" << "\t [7] Manage Users\n";
-		cout << setw(38) << left << "" << "\t [8] Login Register\n";
-		cout << setw(38) << left << "" << "\t [9] Carrency Exchange\n";
-		cout << setw(38) << left << "" << "\t [10] Logout\n";
+		cout << setw(38) << left << "" << "\t [8] Carrency Exchange\n";
+		cout << setw(38) << left << "" << "\t [9] Logout\n";
 		cout << setw(38) << left << "" << "=============================================\n\n";
 
 		_PerformMainMenueOption(enMainMenueOption(_ReadMainMenuOption()));

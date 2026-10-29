@@ -45,7 +45,6 @@ private:
 
 		} while (LoginFail);
 
-		CurrentUser.RegisterLogin();
 		clsMainScreen::ShowMainMenue();
 		return true;
 	}

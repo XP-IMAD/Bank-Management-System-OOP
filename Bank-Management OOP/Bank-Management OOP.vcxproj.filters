@@ -113,9 +113,6 @@
     <ClInclude Include="clsLoginScreen.h">
       <Filter>Header Files\Screen\User</Filter>
     </ClInclude>
-    <ClInclude Include="clsLoginRegisterScreen.h">
-      <Filter>Header Files\Screen\User</Filter>
-    </ClInclude>
     <ClInclude Include="clsTransferScreen.h">
       <Filter>Header Files\Screen\Client</Filter>
     </ClInclude>
@@ -129,6 +126,9 @@
       <Filter>Header Files\Screen</Filter>
     </ClInclude>
     <ClInclude Include="clsCurrenciesListScreen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clsFindCurrencyScreen.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
