@@ -123,9 +123,12 @@
       <Filter>Header Files\Screen\Client</Filter>
     </ClInclude>
     <ClInclude Include="clsCurrency.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Core</Filter>
     </ClInclude>
     <ClInclude Include="clsCurrencyExchangeMenue.h">
+      <Filter>Header Files\Screen</Filter>
+    </ClInclude>
+    <ClInclude Include="clsCurrenciesListScreen.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
