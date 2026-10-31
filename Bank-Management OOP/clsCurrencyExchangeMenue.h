@@ -8,6 +8,7 @@
 #include "clsCurrenciesListScreen.h"
 #include "clsFindCurrencyScreen.h"
 #include "clsUpdateCurrencyRateScreen.h"
+#include "clsCurrencyCalculatorScreen.h"
 
 class clsCurrencyExchangeMenue : protected clsScreen
 {
@@ -18,7 +19,6 @@ private:
 		enListCurrencies = 1, enFindCurrency = 2, enUpdateRate = 3,
 		enCurrencyCalculator = 4, enMainMenue = 5
 	};
-
 
 	static short _ReadCurrencyMenueOption()
 	{
@@ -48,7 +48,8 @@ private:
 
 	static void _ShowCarruncyCalculatorScreen()
 	{
-		cout << "\nCurrency Calculator Screen Will Be Here...\n\n";
+		//cout << "\nCurrency Calculator Screen Will Be Here...\n\n";
+		clsCurrencyCalculatorScreen::ShowCurrencyCalculatorScreen();
 	}
 
 	static void _GoBackToCurrencyExchangeMenue()
