@@ -23,7 +23,7 @@ private:
 	static short _ReadCurrencyMenueOption()
 	{
 		cout << setw(38) << left << "" << "Choose What Do You Want To Do From [1 To 5]: ";
-		short Choise = clsInputValidate::ReadShortNumberBetween(1, 5, "Enter Number Between [1-5]: ");
+		short Choise = clsInputValidate::ReadNumberBetween<short>(1, 5, "Enter Number Between [1-5]: ");
 
 		return Choise;
 	}

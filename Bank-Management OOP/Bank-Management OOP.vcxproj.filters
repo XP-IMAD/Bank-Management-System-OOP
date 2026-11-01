@@ -28,6 +28,9 @@
     <Filter Include="Header Files\Screen\User">
       <UniqueIdentifier>{a763585f-e879-401f-aa62-1f75d7f28351}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Screen\Currency">
+      <UniqueIdentifier>{f57bef13-9e4d-4e6b-839f-9af9c21f00c4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Bank-Management OOP.cpp">
@@ -122,20 +125,20 @@
     <ClInclude Include="clsCurrency.h">
       <Filter>Header Files\Core</Filter>
     </ClInclude>
-    <ClInclude Include="clsCurrencyExchangeMenue.h">
-      <Filter>Header Files\Screen</Filter>
-    </ClInclude>
     <ClInclude Include="clsCurrenciesListScreen.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="clsFindCurrencyScreen.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="clsUpdateCurrencyRateScreen.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Screen\Currency</Filter>
     </ClInclude>
     <ClInclude Include="clsCurrencyCalculatorScreen.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Screen\Currency</Filter>
+    </ClInclude>
+    <ClInclude Include="clsFindCurrencyScreen.h">
+      <Filter>Header Files\Screen\Currency</Filter>
+    </ClInclude>
+    <ClInclude Include="clsUpdateCurrencyRateScreen.h">
+      <Filter>Header Files\Screen\Currency</Filter>
+    </ClInclude>
+    <ClInclude Include="clsCurrencyExchangeMenue.h">
+      <Filter>Header Files\Screen\Currency</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

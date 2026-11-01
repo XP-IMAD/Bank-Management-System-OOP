@@ -25,7 +25,7 @@ private:
 		float Amount = 0;
 
 		cout << "\nEnter Amount To Exchange: ";
-		Amount = clsInputValidate::ReadDblNumber();
+		Amount = clsInputValidate::ReadNumber<double>();
 
 		return Amount;
 	}
@@ -40,7 +40,7 @@ private:
 		while (!clsCurrency::IsCurrencyExist(CurrencyCode))
 		{
 			cout << "\nCurrency Was Not Found! Choose Another One: ";
-			CurrencyCode = clsInputValidate::ReadDblNumber();
+			CurrencyCode = clsInputValidate::ReadNumber<double>();
 		}
 
 		clsCurrency Currency = clsCurrency::FindByCode(CurrencyCode);

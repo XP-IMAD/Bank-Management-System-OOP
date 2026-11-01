@@ -47,12 +47,12 @@ private:
 		double Amount = 0;
 
 		cout << "\nEnter Trasfer Amount: ";
-		Amount = clsInputValidate::ReadPositiveDblNumber();
+		Amount = clsInputValidate::ReadPositiveNumber<double>();
 
 		while (Amount > SourceClient.AccountBalance)
 		{
 			cout << "\nAmount Exceeds The Available Balance, Enter Another Amount: ";
-			Amount = clsInputValidate::ReadPositiveDblNumber();
+			Amount = clsInputValidate::ReadPositiveNumber<double>();
 		}
 
 		return Amount;

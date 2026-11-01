@@ -55,7 +55,7 @@ public:
 
         double Amount = 0;
         cout << "\nPLease Enter Deposit Amount: ";
-        Amount = clsInputValidate::ReadPositiveDblNumber();
+        Amount = clsInputValidate::ReadPositiveNumber<double>();
 
 
         cout << "\nAre You Sure You Want To Perform This Trasaction? [Y/N]: ";

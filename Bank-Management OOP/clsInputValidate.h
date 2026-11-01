@@ -9,24 +9,10 @@ class clsInputValidate
 
 public:
 
-	static bool IsNumberBetween(short Number, short from, short to)
+	template <typename T> static bool IsNumberBetween(T Number, T from, T to)
 	{
 		return (Number >= from && Number <= to);
-	}
 
-	static bool IsNumberBetween(int Number, int from, int to)
-	{
-		return (Number >= from && Number <= to);
-	}
-
-	static bool IsNumberBetween(float Number, float from, float to)
-	{
-		return (Number >= from && Number <= to);
-	}
-
-	static bool IsNumberBetween(double Number, double from, double to)
-	{
-		return (Number >= from && Number <= to);
 	}
 
 	static bool IsDateBetwen(clsDate Date, clsDate DateFrom, clsDate DateTo)
@@ -48,9 +34,9 @@ public:
 		return false;
 	}
 
-	static int ReadIntNumber(string message = "Invalid Number, Enter Again: ")
+	template <typename T> static T ReadNumber(string message = "Invalide Number, Enter Again: ")
 	{
-		int Number;
+		T Number;
 		cin >> Number;
 
 		while (cin.fail())
@@ -65,78 +51,17 @@ public:
 		return Number;
 	}
 
-	static short ReadShortNumber(string message = "Invalid Number, Enter Again: ")
+	template <typename T> static T ReadNumberBetween(T From, T To, string message)
 	{
-		short Number;
-		cin >> Number;
-
-		while (cin.fail())
-		{
-			cin.clear();
-			cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-
-			cout << message << endl;
-			cin >> Number;
-		}
-
-		return Number;
-	}
-
-	static int ReadIntNumberBetween(int From, int To, string message)
-	{
-		int Number = ReadIntNumber();
+		T Number = ReadNumber<T>();
 
 		while (!IsNumberBetween(Number, From, To))
 		{
 			cout << message;
-			Number = ReadIntNumber();
+			Number = ReadNumber<T>();
 		}
 
 		return Number;
-	}
-
-	static short ReadShortNumberBetween(short From, short To, string message)
-	{
-		short Number = ReadIntNumber();
-
-		while (!IsNumberBetween(Number, From, To))
-		{
-			cout << message;
-			Number = ReadIntNumber();
-		}
-
-		return Number;
-	}
-
-	static double ReadDblNumber(string message = "Invalid Number, Enter Again:")
-	{
-		double Number;
-		cin >> Number;
-
-		while (cin.fail())
-		{
-			cin.clear();
-			cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-
-			cout << message << endl;
-			cin >> Number;
-		}
-
-		return Number;
-	}
-
-	static double ReadDblNumberBetween(double From, double To, string message)
-	{
-		double Number = ReadDblNumber();
-
-		while (!IsNumberBetween(Number, From, To))
-		{
-			cout << message;
-			Number = ReadDblNumber();
-		}
-
-		return Number;
-
 	}
 
 	static bool IsValidDate(clsDate Date)
@@ -152,14 +77,14 @@ public:
 		return S1;
 	}
 
-	static double ReadPositiveDblNumber()
+	template <typename T> static T ReadPositiveNumber()
 	{
-		double Number = ReadDblNumber();
+		T Number = ReadNumber<T>();
 
 		while (Number <= 0)
 		{
 			cout << "\nPLease Enter a Positive Number: ";
-			Number = ReadDblNumber();
+			Number = ReadNumber<T>();
 		}
 
 		return Number;

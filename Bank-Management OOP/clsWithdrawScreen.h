@@ -56,14 +56,14 @@ public:
 
         double Amount = 0;
         cout << "\nPLease Enter Withdraw Amount: ";
-        Amount = clsInputValidate::ReadPositiveDblNumber();
+        Amount = clsInputValidate::ReadPositiveNumber<double>();
 
         while (Amount > Client.AccountBalance)
         {
             cout << "\nAmount Exeeds The Balance, You Can't Withdraw Up To : "
                 << Client.AccountBalance << endl;
             cout << "\nPLease Enter Another Amount: ";
-            Amount = clsInputValidate::ReadPositiveDblNumber();
+            Amount = clsInputValidate::ReadPositiveNumber<double>();
 
         }
 
